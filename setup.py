@@ -26,9 +26,13 @@ install_requires = load_requirements()
 version = open("version.txt").read().rstrip()
 
 
-# The only thing we do in this file is to call the setup() function with all
+# The only thing we do in this file is to call the setup(
+    namespace_packages=['bob'],
+) function with all
 # parameters that define our package.
 setup(
+    namespace_packages=['bob'],
+
 
     name='bob.db.utfvp',
     version=version,
